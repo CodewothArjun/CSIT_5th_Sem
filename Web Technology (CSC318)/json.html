@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JSON</title>
+</head>
+<body>
+    <p id="demo">Learning JSON</p>
+
+
+    <script>
+        let txt='{"name":"Arjun", "age":"24", "city":"kathmandu"}'
+        let obj=JSON.parse(txt);
+        document.getElementById("demo").innerHTML=`My name is ${obj.name}, I live in ${obj.city}. I am ${obj.age} years old.`;
+    </script>
+</body>
+</html>

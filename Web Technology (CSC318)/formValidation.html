@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+<h2>Form Validation using JS </h2>
+<form onsubmit="return validation()">
+    <fieldset>
+        <legend>Sign Up Form</legend>
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" class="inpfield"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" class="inpfield"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" class="inpfield"><br>
+        <label for="number">Phone No.</label><br>
+        <input type="number" id="number" class="inpfield"><br>
+        <label for="male">Male</label> <input type="radio" name="gender" id="male">
+        <label for="female">Female</label> <input type="radio" name="gender" id="female"><br>
+        <input type="button" value="Submit">
+
+    </fieldset>
+</form>
+
+<div class="posContainer">
+    This is a new section
+    <b class="position">Element</b>
+</div>
+
+    <!-- Script JS -->
+    <script src="formValidScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Learning Forms</title>
+
+</head>
+<body>
+    <h1>Form: used to collect a user data.</h1>
+    <tt>Learning Forms</tt>
+    <form action="">
+    <fieldset>
+        <legend>Form title</legend>
+        <label for="name">Username:</label>
+        <input type="text" name="username" id="user"><br>
+        <label for="password">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required><br><br
+        <fieldset>
+        <input type="radio" name="gender"> <label for="male">Male</label>
+        <input type="radio" name="gender"> <label for="male">Female</label>
+        <input type="radio" name="gender"> <label for="male">Gay</label>
+        <input type="radio" name="gender"> <label for="male">Hemo</label>
+        <input type="radio" name="gender"> <label for="male">Gay</label>
+        <input type="radio" name="gender"> <label for="male">UK</label>
+        <input type="radio" name="gender"> <label for="male">US</label>
+        <input type="radio" name="gender"> <label for="male">CAD</label>
+        </fieldset><br><br>
+        <fieldset>
+            <label for="country">Select Country: </label>
+            <select name="country" id="country">
+                <optgroup>
+                    <option value="1">Nepal</option>
+                    <option value="2">India</option>
+                    <option value="3">Pakistan</option>
+                    <option value="4">China</option>
+                </optgroup>
+                <optgroup>
+                    <option value="1">America</option>
+                    <option value="2">USA</option>
+                    <option value="3">UK</option>
+                    <option value="4">Brazil</option>
+                </optgroup>
+            </select>
+        </fieldset><br>
+        <label for="Note">Take a notes: </label><br>
+        <textarea name="textarea" id="textarea" rows="10" cols="50">
+            In heading there are 6 headings. H1 is the largest heading having largest font size. H1 to H6.
+        </textarea>
+
+        <fieldset>
+            <label for="next"><h2>Next Input type attributes:</h2></label><br>
+            <label for="file">Choose Documents:</label>
+            <input type="file"><br>
+            <label for="search">Search Something:</label>
+            <input type="search"><br><br>
+            <label for="image">Image:</label><br>
+            <input type="image" src="https://media.geeksforgeeks.org/wp-content/uploads/20201128115759/BestTipsforBeginnersToLearnCodingEffectively.jpg" width="250px">
+            <br> <label for="color">Color:</label><br>
+            <input type="color">
+            <br> <label for="date">Date:</label>
+            <input type="date">
+            <br> <label for="date">Date and Local:</label>
+            <input type="datetime-local">
+            <br> <label for="tel">Telephone No.:</label>
+            <input type="tel" placeholder="+1 (123) 456-7890">
+            <br> <label for="reset">Reset:</label>
+            <input type="reset">
+            <br> <label for="range">Communication Level:</label>
+            <input type="range">
+            <br> <label for="range">Week:</label>
+            <input type="week">
+            <br> <label for="range">Url:</label>
+            <input type="url">
+            <br> <label for="range">Number Range:</label>
+            <input type="number" min="3" max="10">
+            <br> <label for="nameco">Course Name:</label>
+            <input type="text" value="Computer Science in information Technology" disabled size="40">
+        
+        </fieldset>
+    </fieldset>
+    </form>
+</body>
+</html>
