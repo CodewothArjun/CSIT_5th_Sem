@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2D Array in HTML Table</title>
+  <script>
+    // Create a 2D array
+    let students = [
+      ["Name", "Age", "Grade"],
+      ["Ram", 21, "A"],
+      ["Shyam", 22, "B+"],
+      ["Sita", 20, "A+"]
+    ];
+
+    // Function to display 2D array in a table
+    function displayTable() {
+      let tableHTML = "<table border='1' cellpadding='10'>";
+
+      for (let i = 0; i < students.length; i++) {
+        tableHTML += "<tr>";
+        for (let j = 0; j < students[i].length; j++) {
+          if (i === 0) {
+            tableHTML += "<th>" + students[i][j] + "</th>"; // Header
+          } else {
+            tableHTML += "<td>" + students[i][j] + "</td>"; // Data
+          }
+        }
+        tableHTML += "</tr>";
+      }
+
+      tableHTML += "</table>";
+      document.getElementById("output").innerHTML = tableHTML;
+    }
+  </script>
+</head>
+<body onload="displayTable()">
+
+  <h2>Displaying 2D Array as Table</h2>
+  <div id="output"></div>
+
+</body>
+</html>

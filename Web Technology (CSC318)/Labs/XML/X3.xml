@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="library.xsd">
+    
+    <!-- Simple Type Example -->
+    <book>
+        <title>Introduction to XML</title>
+        <author>Arjun Mijar</author>
+        <publicationYear>2023</publicationYear>
+        <price>29.99</price>
+    </book>
+    
+    <!-- Complex Type Example -->
+    <bookstore>
+        <book>
+            <title>Web Development Basics</title>
+            <author>Jane Smith</author>
+            <publicationYear>2021</publicationYear>
+            <details>
+                <genre>Programming</genre>
+                <pages>300</pages>
+            </details>
+        </book>
+    </bookstore>
+    
+</library>

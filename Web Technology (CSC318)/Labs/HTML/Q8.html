@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image with clint and server script</title>
+  </head>
+  <body>
+    <h2>Click on the image to see client-side and server-side actions</h2>
+    <img src="images/image.png" alt="Workplace" usemap="#workmap" />
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="Q6.html" />
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="Q5.html" />
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="Q7.html" />
+    </map>
+
+    <div>
+      <!-- Audio Example -->
+      <div>
+          <p>Song mp3</p>
+        <audio controls preload="auto" loop>
+          <source src="media/song.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <!-- Video Example -->
+      <div>
+          <p>Video mp4</p>
+        <video width="640" height="360" controls autoplay muted>
+          <p>Video mp4</p>
+          <source src="media/video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>

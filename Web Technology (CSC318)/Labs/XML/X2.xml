@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report SYSTEM "report.dtd">
+<Report>
+    <Students>
+        <Student StudId="s1">
+            <Name>
+                <First>Arjun</First>
+                <Last>Mijar</Last>
+            </Name>
+            <Status>Enrolled</Status>
+            <CrsTaken CrsCode="c1"/>
+            <CrsTaken CrsCode="c2"/>
+        </Student>
+        <Student StudId="s2">
+            <Name>
+                <First>Aayush</First>
+                <Last>Gautam</Last>
+            </Name>
+            <Status>Graduated</Status>
+            <CrsTaken CrsCode="c1"/>
+        </Student>
+    </Students>
+    <Classes>
+        <Class>
+            <Semester>Fall 2022</Semester>
+            <ClassRoster Members="s1 s2"/>
+        </Class>
+    </Classes>
+    <Courses>
+        <Course CrsCode="c1">Computer Science</Course>
+        <Course CrsCode="c2">Mathematics</Course>
+    </Courses>
+</Report>

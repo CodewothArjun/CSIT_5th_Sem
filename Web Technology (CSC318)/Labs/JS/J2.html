@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Objects and Constructors</title>
+  <script>
+    // 1. Creating a simple object with properties
+    let student = {
+      name: "Arjun",
+      age: 22,
+      course: "BSc CSIT",
+      display: function () {
+        return this.name + " is studying " + this.course + " and is " + this.age + " years old.";
+      }
+    };
+
+    // 2. Constructor function to create multiple objects
+    function Car(brand, model, year) {
+      this.brand = brand;
+      this.model = model;
+      this.year = year;
+
+      this.info = function () {
+        return "Car: " + this.brand + " " + this.model + " (" + this.year + ")";
+      };
+    }
+
+    // Create objects using the constructor
+    let car1 = new Car("Toyota", "Corolla", 2018);
+    let car2 = new Car("Hyundai", "i20", 2021);
+
+    // Displaying outputs on page
+    function showObjects() {
+      document.getElementById("studentInfo").innerHTML = student.display();
+      document.getElementById("car1Info").innerHTML = car1.info();
+      document.getElementById("car2Info").innerHTML = car2.info();
+    }
+
+    //console log
+    console.log(student.display());
+    console.log(car1.info());
+    console.log(car2.info());
+    console.log(student)
+    
+    
+  </script>
+</head>
+<body onload="showObjects()">
+
+  <h2>JavaScript Objects, Properties, and Constructors</h2>
+
+  <p id="studentInfo"></p>
+  <p id="car1Info"></p>
+  <p id="car2Info"></p>
+
+</body>
+</html>
